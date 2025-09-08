@@ -1571,6 +1571,10 @@
                     }
 
                     const pageUrl = encodeURIComponent(window.location.href);
+                                        // استخراج النص المخصص من الخاصية data-share-text إذا كانت موجودة
+                    const customShareText = event.currentTarget.dataset.shareText;
+                    const shareText = customShareText ? encodeURIComponent(customShareText) : encodeURIComponent('اكتشف هذا البروفايل الإبداعي على ' + window.location.host);
+
                     let shareUrl = '';
 
                     switch (platform) {
