@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روابطي الاجتماعية | My Social Links</title>
+    <meta property="og:title" content="عنوان كيفية بلا بلا بلا" />
+    <meta property="og:description" content="الوصف الاول" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1615412704911-55d589229864?q=80&w=1282&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" />
+    <meta property="og:url" content="https://github.com/abdol5nifri/testnooooooo" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ff0050;
+            --secondary-color: #69c9d0;
+            --dark-color: #121212;
+            --light-color: #ffffff;
+            --gray-color: #f8f8f8;
+            --text-color: #333333;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --gradient: linear-gradient(135deg, #ff0050, #69c9d0);
+            --copy-btn-bg: rgba(105, 201, 208, 0.2);
+            --copy-btn-hover: rgba(105, 201, 208, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent !important;
+            transform: translateY(0px);
+            scroll-behavior:smooth;
+            text-decoration:none;
+        }
+
+        body {
+            background:#CCCCCC;
+            background-attachment: scroll;
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .no-scroll {
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+            margin: 0 auto;
+            flex: 1;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            margin: 0px 0;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: var(--shadow);
+        }
+
+        .share-btn {
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .share-btn:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--light-color);
+            box-shadow: var(--shadow);
+            margin-bottom: 15px;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+
+        .profile-bio {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            -webkit-tap-highlight-color: transparent !important;
+             }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            text-decoration: none;
+            font-size: 18px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            background: var(--gradient);
+            color: var(--light-color);
+        }
+
+        .bio-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+            text-align: center;
+            line-height: 1.8;
+            border-left: 4px solid var(--primary-color);
+            -webkit-tap-highlight-color: transparent !important;
+        }
+
+        .bio-section p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .bio-section a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .bio-section a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transform: scaleX(0);
+            transition: transform 0.0s ease;
+        }
+
+        .bio-section a:hover {
+            color: var(--secondary-color);
+        }
+
+        .bio-section a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .links-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            margin: 20px 0;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: none;
+            box-shadow: var(--shadow);
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 0, 80, 0.3);
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .link-item {
+            background-color: var(--light-color);
+            padding: 16px 20px;
+            border-radius: 12px;
+            color: var(--text-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .link-text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .link-icon {
+            font-size: 20px;
+            min-width: 24px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* إضافة نمط للصور داخل الأيقونات */
+        .link-icon-img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .copy-btn {
+            background: var(--copy-btn-bg);
+            border: none;
+            border-radius: 8px;
+            padding: 8px 12px;
+            color: inherit;
+            font-size: 12px;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 2;
+            opacity: 1;
+            white-space: nowrap;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .copy-btn:hover {
+            background: var(--copy-btn-hover);
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .highlight {
+            background: var(--gradient);
+            color: white;
+        }
+
+        .highlight:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .notification.show {
+            opacity: 1;
+        }
+
+        /* قسم Devin Apollon مع التمرير الأفقي */
+        .devin-scroll-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: var(--shadow);
+            margin: 20px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* إخفاء شريط التمرير في Firefox */
+        }
+
+        .devin-scroll-container::-webkit-scrollbar {
+            display: none; /* إخفاء شريط التمرير في Chrome/Safari */
+        }
+
+        .devin-profiles {
+            display: inline-flex;
+            gap: 15px;
+        }
+
+        .devin-profile {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 100px;
+            padding: 10px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
+
+        .devin-profile:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .devin-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--light-color);
+            box-shadow: var(--shadow);
+            margin-bottom: 8px;
+        }
+
+        .devin-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 3px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90px;
+        }
+
+        .devin-username {
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 90px;
+        }
+
+        .devin-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .devin-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 12px;
+        }
+
+        .devin-link:hover {
+            color: var(--secondary-color);
+        }
+
+        /* مؤشر التمرير */
+        .scroll-indicator {
+            text-align: center;
+            margin-top: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+            display: none;
+        }
+
+        .scroll-indicator i {
+            margin-left: 5px;
+            animation: bounce 2s infinite;
+        }
+
+        /* قسم منتجات Etsy */
+        .etsy-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+            margin: 20px 0;
+        }
+
+        .etsy-title {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .etsy-title i {
+            color: var(--primary-color);
+        }
+
+        .etsy-search-container {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .etsy-search-input {
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: none;
+            box-shadow: var(--shadow);
+            font-size: 16px;
+            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .etsy-search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 0, 80, 0.3);
+        }
+
+        .etsy-scroll-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            padding: 10px 5px;
+        }
+
+        .etsy-scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .etsy-products {
+            display: inline-flex;
+            gap: 15px;
+        }
+
+        .etsy-product {
+            display: inline-flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            min-width: 400px;
+            max-width: 400px;
+            cursor: pointer;
+        }
+
+        .etsy-product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .etsy-product-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .etsy-product-details {
+            padding: 12px;
+        }
+
+        .etsy-product-name {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .ishabliro2yatlmazid {
+            text-align: center;
+            margin-top: 10px;
+            color: #666;
+            font-size: 12px;
+
+        }
+
+
+        .ishabliro2yatlmazid i {
+            margin-left: 5px;
+            animation: bounce 2s infinite;
+        }
+
+        .etsy-product-price {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .etsy-product-link {
+            display: block;
+            text-align: center;
+            background: var(--gradient);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .etsy-product-link:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            transform: scale(1.05);
+        }
+
+        .no-products-message {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-style: italic;
+            display: none;
+        }
+
+        /* قسم الدروس */
+        .lessons-section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+            margin: 20px 0;
+        }
+
+        .lessons-title {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .lessons-title i {
+            color: var(--primary-color);
+        }
+
+        .lessons-carousel-wrapper {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .lessons-carousel-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        .lessons-carousel {
+            display: inline-flex;
+            gap: 15px; /* المسافة بين الفيديوهات */
+        }
+
+        .video-item {
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+            min-width: 300px; /* حجم الكاروسيل */
+            max-width: 350px;
+            background: var(--light-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 10px;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* نسبة 16:9 */
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .video-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark-color);
+            text-align: right;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .video-description {
+            font-size: 14px;
+            color: #666;
+            text-align: right;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* يظهر سطرين فقط */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            white-space: normal;
+        }
+
+        .lessons-scroll-indicator {
+            text-align: center;
+            margin-top: 10px;
+            color: #666;
+            font-size: 12px;
+            display: none;
+        }
+
+        .lessons-scroll-indicator i {
+            margin-left: 5px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(0);
+            }
+            40% {
+                transform: translateX(-5px);
+            }
+            60% {
+                transform: translateX(-3px);
+            }
+        }
+
+        /* إزالة خاصية -webkit-tap-highlight-color من جميع العناصر في مربع الروابط */
+        .links-container * {
+            -webkit-tap-highlight-color: transparent !important;
+        }
+
+        /* مربع البحث الشامل */
+        .global-search-container {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-direction: column; /* جعل المحتوى يترتب عموديا */
+        }
+
+        .search-controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .global-search-input {
+            flex: 1;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: none;
+            box-shadow: var(--shadow);
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .global-search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 0, 80, 0.3);
+        }
+
+        .global-search-btn {
+            background: var(--gradient);
+            border: none;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .global-search-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+
+        /* START: MODIFICATION */
+        /* حاوية النتائج */
+        .search-results-box {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+            margin-top: 15px;
+            display: none;
+            flex-direction: row; /* باش العناصر يتستفو أفقيا */
+            flex-wrap: wrap; /* باش يرجعو للسطر ملي يعمر */
+            justify-content: center; /* باش يجيو الكروت فالوسط */
+            gap: 15px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .search-results-box.show {
+            display: flex;
+        }
+
+        /* الروابط و الفيديوهات خاص ياخدو العرض كامل */
+        .search-results-box .link-item,
+        .search-results-box .video-item {
+            width: 100%;
+        }
+
+        /* كنرجعو الحجم الطبيعي للفيديو داخل نتائج البحث */
+        .search-results-box .video-item {
+            min-width: unset;
+            max-width: unset;
+        }
+        /* END: MODIFICATION */
+
+        .no-results-message {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            padding: 20px 0;
+            width: 100%; /* باش تاخد العرض كامل فالوسط */
+        }
+
+        .modal { display: none !important; }
+
+        /* نافذة المشاركة الجديدة */
+        .share-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+            align-items: flex-start;
+            padding-top: 50px;
+        }
+
+        .share-modal-content {
+            background: #fff;
+            padding: 40px 20px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 0.5s ease-out;
+            margin: 0 auto;
+        }
+
+        .share-close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #aaa;
+            font-size: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .share-close-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .profile-img-modal {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .share-modal-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+        }
+
+        .share-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .share-social-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .share-social-icon i {
+            font-size: 28px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #f1f1f1;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 5px;
+            transition: var(--transition);
+        }
+
+        .share-social-icon:hover i {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .share-social-icon .fa-facebook { color: #3b5998; background-color: #e6f0ff; }
+        .share-social-icon .fa-twitter { color: #00acee; background-color: #e6f8ff; }
+        .share-social-icon .fa-whatsapp { color: #25d366; background-color: #e8f8f0; }
+        .share-social-icon .fa-telegram { color: #0088cc; background-color: #e6f4ff; }
+        .share-social-icon .fa-linkedin { color: #0e76a8; background-color: #e6f2ff; }
+        .share-social-icon .fa-pinterest { color: #c8232c; background-color: #ffe6e7; }
+        .share-social-icon .fa-link { color: var(--secondary-color); background-color: rgba(105, 201, 208, 0.1); }
+
+        .share-copy-link {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: #f1f1f1;
+            border-radius: 12px;
+            padding: 8px 10px;
+        }
+
+        .share-copy-link input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            color: #555;
+            text-align: right;
+        }
+
+        .share-copy-link input:focus {
+            outline: none;
+        }
+
+        .share-copy-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .share-copy-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        @media (min-width: 601px) {
+            .share-modal-content {
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .modal{
+                scroll-behavior:smooth;
+            }
+           .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+            .profile-name {
+                font-size: 22px;
+            }
+            .link-item {
+                padding: 14px 16px;
+            }
+            .bio-section {
+                padding: 16px;
+                font-size: 15px;
+            }
+            .links-container {
+                padding: 20px 15px;
+            }
+            .social-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+            .copy-btn {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+            .link-content {
+                flex-wrap: wrap;
+            }
+            .link-text {
+                min-width: 0;
+            }
+            .link-icon-img {
+                width: 18px;
+                height: 18px;
+            }
+            .devin-profile {
+                min-width: 90px;
+            }
+            .devin-img {
+                width: 45px;
+                height: 45px;
+            }
+            .scroll-indicator, .lessons-scroll-indicator {
+                display: block;
+            }
+            .etsy-product {
+                min-width: 300px;
+                max-width: 300px;
+            }
+            .etsy-product-image {
+                height: 130px;
+            }
+            .modal .etsy-product {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .modal .etsy-product-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="notification" id="linkNotification">تم نسخ الرابط بنجاح!</div>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-top-bar">
+                <img src="https://i.postimg.cc/QtsVsJc9/linktree-transparent-icon-free-png.png" alt="Logo" class="logo">
+                <button id="shareButton" class="share-btn"><i class="fas fa-share-alt"></i></button>
+            </div>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Profile" class="profile-img">
+                <h1 class="profile-name">@di.asmrcanvas</h1>
+                <p class="profile-bio">فنان محتوى وإبداع | Get Your Kiwi Baby Mug Todatay!</p>
+
+                <div class="social-links">
+                    <a href="mailto:contact@example.com" class="social-icon"><i class="far fa-envelope"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="far fa-bell"></i></a>
+                </div>
+            </div>
+
+            <div class="bio-section">
+                <p>فنان محترف متخصص في الرسم الصوتي (ASMR) ومحتوى التيك توك الإبداعي. أعمل على إنشاء محتوى مريح وممتع يجمع بين الفن والاسترخاء.</p>
+                <p>زوروا متجري الجديد: <a href="https://example.com/shop" target="_blank">joyfulbunchstudio.com</a> 🎨</p>
+                <p>تابعوني على منصات التواصل الاجتماعي للاستفادة من محتوى حصري!</p>
+            </div>
+        </div>
+
+        <div class="global-search-container">
+            <div class="search-controls">
+                <input type="text" class="global-search-input" placeholder="ابحث في الموقع بالكامل..." id="globalSearchInput">
+                <button class="global-search-btn" id="globalSearchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="search-results-box" id="globalResultsBox">
+                </div>
+        </div>
+
+        <div class="links-container">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="ابحث في الروابط..." id="searchInput">
+            </div>
+
+            <div class="links" id="linksContainer">
+                </div>
+        </div>
+
+        <div class="lessons-section">
+            <h2 class="lessons-title"><i class="fas fa-graduation-cap"></i> دروسي</h2>
+
+            <div class="lessons-carousel-wrapper">
+                <div class="lessons-carousel" id="lessonsCarousel">
+                    </div>
+            </div>
+            <div class="lessons-scroll-indicator"> اسحب لرؤية المزيد <i class="fas fa-arrow-left"></i> </div>
+        </div>
+
+        <div class="etsy-container">
+            <h2 class="etsy-title"><i class="fab fa-etsy"></i> منتجات Etsy</h2>
+            <div class="etsy-search-container">
+                <input type="text" class="etsy-search-input" placeholder="ابحث في المنتجات..." id="etsySearchInput">
+            </div>
+            <div class="etsy-scroll-container">
+                <div class="etsy-products" id="etsyProductsContainer">
+
+                </div>
+
+            </div>
+
+              <div class="ishabliro2yatlmazid"> اسحب لرؤية المزيد <i class="fas fa-arrow-left"></i></div>
+
+
+
+
+            <div class="no-products-message" id="noProductsMessage"> لم يتم العثور على منتجات تطابق بحثك. </div>
+        </div>
+
+        <div class="devin-scroll-container">
+            <div class="devin-profiles">
+                <div class="devin-profile">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDBwYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Devin Apollon" class="devin-img">
+                    <h3 class="devin-name">Devin Apollon</h3>
+                    <p class="devin-username">/devapollon</p>
+                    <div class="devin-links">
+                        <a href="#" class="devin-link">Beacons</a>
+                    </div>
+                </div>
+
+                <div class="devin-profile">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="John Smith" class="devin-img">
+                    <h3 class="devin-name">John Smith</h3>
+                    <p class="devin-username">/johnsmith</p>
+                    <div class="devin-links">
+                        <a href="#" class="devin-link">Beacons</a>
+                    </div>
+                </div>
+
+                <div class="devin-profile">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDBwYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit-crop&w=200&q=80" alt="Sarah Johnson" class="devin-img">
+                    <h3 class="devin-name">Sarah Johnson</h3>
+                    <p class="devin-username">/sarahj</p>
+                    <div class="devin-links">
+                        <a href="#" class="devin-link">Beacons</a>
+                    </div>
+                </div>
+
+                <div class="devin-profile">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit-crop&w=200&q=80" alt="Mike Wilson" class="devin-img">
+                    <h3 class="devin-name">Mike Wilson</h3>
+                    <p class="devin-username">/mikew</p>
+                    <div class="devin-links">
+                        <a href="#" class="devin-link">Beacons</a>
+                    </div>
+                </div>
+
+                <div class="devin-profile">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDBwYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit-crop&w=200&q=80" alt="Emma Davis" class="devin-img">
+                    <h3 class="devin-name">Emma Davis</h3>
+                    <p class="devin-username">/emmad</p>
+                    <div class="devin-links">
+                        <a href="#" class="devin-link">Beacons</a>
+                    </div>
+                </div>
+
+                <div class="devin-profile">
+                    <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit-crop&w=200&q=80" alt="Alex Turner" class="devin-img">
+                    <h3 class="devin-name">Alex Turner</h3>
+                    <p class="devin-username">/alext</p>
+                    <div class="devin-links">
+                        <a href="#" class="devin-link">Beacons</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator"> اسحب لرؤية المزيد <i class="fas fa-arrow-left"></i> </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 Devin Apollon. All Rights Reserved.
+    </div>
+
+    <div id="shareModal" class="share-modal">
+        <div class="share-modal-content">
+            <span class="share-close-btn">&times;</span>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Profile" class="profile-img-modal">
+            <h3 class="share-modal-title">شارك هذا البروفايل</h3>
+            <div class="share-social-links">
+                <a href="#" class="share-social-icon" data-platform="facebook"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="#" class="share-social-icon" data-platform="x"><i class="fab fa-x-twitter"></i>X</a>
+                <a href="#" class="share-social-icon" data-platform="whatsapp"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+                <a href="#" class="share-social-icon" data-platform="telegram"><i class="fab fa-telegram-plane"></i>Telegram</a>
+                <a href="#" class="share-social-icon" data-platform="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="#" class="share-social-icon" data-platform="pinterest" data-share-title="عنوان بين تريست " data-share-image="https://images.unsplash.com/photo-1687444569727-a100d340b485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" data-share-description="أجمل الأعمال الفنية المريحة المستوحاة من ASMR."><i class="fab fa-pinterest"></i>Pinterest</a>
+                <a href="#" class="share-social-icon" data-platform="copy"><i class="fas fa-link"></i>نسخ الرابط</a>
+            </div>
+            <div class="share-copy-link" id="copyLinkContainer">
+                <input type="text" id="shareUrlInput" value="" readonly>
+                <button class="share-copy-btn" id="shareCopyBtn">نسخ</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const linksData = [
+                { "title": "Instagram", "url": "https://www.instagram.com/di.asmrcanvas", "icon": "fab fa-instagram", "highlight": true, "type": "link" },
+                { "title": "TikTok", "url": "https://www.tiktok.com/@di.asmrcanvas", "icon": "fab fa-tiktok", "type": "link" },
+                { "title": "YouTube Channel", "url": "https://www.youtube.com/@di.asmrcanvas", "icon": "fab fa-youtube", "type": "link" },
+                { "title": "Facebook", "url": "https://www.facebook.com/diasmrcanvas", "icon": "fab fa-facebook", "type": "link" },
+                { "title": "Threads", "url": "https://www.threads.net/@di.asmrcanvas", "icon": "fab fa-threads", "type": "link" },
+                { "title": "Twitter / X", "url": "https://x.com/diasmrcanvas", "icon": "fab fa-x-twitter", "type": "link" },
+                { "title": "Etsy Shop", "url": "https://www.etsy.com/shop/JoyfulBunchStudio", "icon": "fab fa-etsy", "type": "link" },
+                { "title": "Behance", "url": "https://www.behance.net/diasmrcanvas", "icon": "fab fa-behance", "type": "link" },
+                { "title": "Pinterest", "url": "https://www.pinterest.com/diasmrcanvas", "icon": "fab fa-pinterest", "type": "link" },
+                { "title": "Shopify Store", "url": "https://diasmrcanvas.myshopify.com", "icon": "fas fa-shopping-bag", "type": "link" },
+                { "title": "Discord Server", "url": "https://discord.gg/diasmrcanvas", "icon": "fab fa-discord", "type": "link" }
+            ];
+
+            const etsyProducts = [
+                { "name": "Custom ASMR Art Piece", "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80", "price": "299.99 دولار", "url": "#", "type": "product" },
+                { "name": "Custom ASMR Art Piece", "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80", "price": "299.99 دولار", "url": "#", "type": "product" },
+                { "name": "Custom ASMR Art Piece", "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80", "price": "299.99 دولار", "url": "#", "type": "product" },
+                { "name": "Custom ASMR Art Piece", "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80", "price": "299.99 دولار", "url": "#", "type": "product" },
+                { "name": "Custom ASMR Art Piece", "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80", "price": "299.99 دولار", "url": "#", "type": "product" },
+                { "name": "Custom ASMR Art Piece", "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80", "price": "299.99 دولار", "url": "#", "type": "product" },
+                 { "name": "Custom ASMR Art Piece", "image": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80", "price": "299.99 دولار", "url": "#", "type": "product" }
+            ];
+
+            const lessonsData = [
+                { "title": "درس الرسم الصوتي (ASMR) للمبتدئين", "description": "تعلم أساسيات الرسم الصوتي وتقنيات ASMR في هذا الدرس الشامل. اكتشف كيفية إنشاء محتوى مريح وجذاب يجمع بين الفن والاسترخاء.", "videoUrl": "https://www.youtube.com/embed/X5Qoo8vmCIY?si=MqHtgW9c32ATWCjr", "type": "video" },
+               { "title": "درس الرسم الصوتي (ASMR) للمبتدئين", "description": "تعلم أساسيات الرسم الصوتي وتقنيات ASMR في هذا الدرس الشامل. اكتشف كيفية إنشاء محتوى مريح وجذاب يجمع بين الفن والاسترخاء.", "videoUrl": "https://www.youtube.com/embed/X5Qoo8vmCIY?si=MqHtgW9c32ATWCjr", "type": "video" },
+                { "title": "درس الرسم الصوتي (ASMR) للمبتدئين", "description": "تعلم أساسيات الرسم الصوتي وتقنيات ASMR في هذا الدرس الشامل. اكتشف كيفية إنشاء محتوى مريح وجذاب يجمع بين الفن والاسترخاء.", "videoUrl": "https://www.youtube.com/embed/X5Qoo8vmCIY?si=MqHtgW9c32ATWCjr", "type": "video" },
+                { "title": "درس الرسم الصوتي (ASMR) للمبتدئين", "description": "تعلم أساسيات الرسم الصوتي وتقنيات ASMR في هذا الدرس الشامل. اكتشف كيفية إنشاء محتوى مريح وجذاب يجمع بين الفن والاسترخاء.", "videoUrl": "https://www.youtube.com/embed/X5Qoo8vmCIY?si=MqHtgW9c32ATWCjr", "type": "video" },
+                { "title": "درس الرسم الصوتي (ASMR) للمبتدئين", "description": "تعلم أساسيات الرسم الصوتي وتقنيات ASMR في هذا الدرس الشامل. اكتشف كيفية إنشاء محتوى مريح وجذاب يجمع بين الفن والاسترخاء.", "videoUrl": "https://www.youtube.com/embed/X5Qoo8vmCIY?si=MqHtgW9c32ATWCjr", "type": "video" },
+                { "title": "درس الرسم الصوتي (ASMR) للمبتدئين", "description": "تعلم أساسيات الرسم الصوتي وتقنيات ASMR في هذا الدرس الشامل. اكتشف كيفية إنشاء محتوى مريح وجذاب يجمع بين الفن والاسترخاء.", "videoUrl": "https://www.youtube.com/embed/X5Qoo8vmCIY?si=MqHtgW9c32ATWCjr", "type": "video" }
+            ];
+
+            const linksContainer = document.getElementById('linksContainer');
+            const searchInput = document.getElementById('searchInput');
+            const globalSearchInput = document.getElementById('globalSearchInput');
+            const globalSearchBtn = document.getElementById('globalSearchBtn');
+            const globalResultsBox = document.getElementById('globalResultsBox');
+            const etsyProductsContainer = document.getElementById('etsyProductsContainer');
+            const etsySearchInput = document.getElementById('etsySearchInput');
+            const noProductsMessage = document.getElementById('noProductsMessage');
+            const lessonsCarousel = document.getElementById('lessonsCarousel');
+            const notification = document.getElementById('linkNotification');
+            const shareButton = document.getElementById('shareButton');
+            const shareModal = document.getElementById('shareModal');
+            const shareCloseBtn = document.querySelector('.share-close-btn');
+            const shareUrlInput = document.getElementById('shareUrlInput');
+            const shareCopyBtn = document.getElementById('shareCopyBtn');
+            const body = document.body;
+
+            function renderLinks(filteredLinks) {
+                linksContainer.innerHTML = '';
+                filteredLinks.forEach((link, index) => {
+                    const linkElement = document.createElement('a');
+                    linkElement.href = link.url;
+                    linkElement.target = '_blank';
+                    linkElement.rel = 'noopener noreferrer';
+                    linkElement.className = 'link-item';
+                    if (link.highlight) {
+                        linkElement.classList.add('highlight');
+                    }
+                    linkElement.innerHTML = `
+                        <div class="link-content">
+                            <div class="link-text">
+                                <span class="link-icon"><i class="${link.icon}"></i></span>
+                                <span>${link.title}</span>
+                            </div>
+                            <button class="copy-btn" data-url="${link.url}">
+                                <i class="fas fa-copy"></i>
+                                نسخ
+                            </button>
+                        </div>
+                    `;
+                    // زدت delay باش كل element يظهر واحد مور واحد
+                    linkElement.style.animationDelay = `${index * 0.1}s`;
+                    linksContainer.appendChild(linkElement);
+                });
+                addCopyButtonListeners();
+            }
+
+            function addCopyButtonListeners() {
+                document.querySelectorAll('.copy-btn').forEach(button => {
+                    button.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        const urlToCopy = button.dataset.url;
+                        navigator.clipboard.writeText(urlToCopy).then(() => {
+                            showNotification();
+                        }).catch(err => {
+                            console.error('Failed to copy text: ', err);
+                        });
+                    });
+                });
+            }
+
+            function renderEtsyProducts(products) {
+                etsyProductsContainer.innerHTML = '';
+                if (products.length > 0) {
+                    products.forEach(product => {
+                        const productElement = document.createElement('a');
+                        productElement.href = product.url;
+                        productElement.target = '_blank';
+                        productElement.rel = 'noopener noreferrer';
+                        productElement.className = 'etsy-product';
+                        productElement.innerHTML = `
+                            <img src="${product.image}" alt="${product.name}" class="etsy-product-image">
+                            <div class="etsy-product-details">
+                                <h4 class="etsy-product-name">${product.name}</h4>
+                                <p class="etsy-product-price">${product.price}</p>
+                                <span class="etsy-product-link">اذهب للمنتج</span>
+                            </div>
+                        `;
+                        etsyProductsContainer.appendChild(productElement);
+                    });
+                    noProductsMessage.style.display = 'none';
+                } else {
+                    noProductsMessage.style.display = 'block';
+                }
+            }
+
+            function renderLessons() {
+                lessonsCarousel.innerHTML = ''; // Clear existing lessons
+                lessonsData.forEach(lesson => {
+                    const videoElement = document.createElement('div');
+                    videoElement.className = 'video-item';
+                    videoElement.innerHTML = `
+                        <div class="video-container">
+                            <iframe class="video-iframe" src="${lesson.videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="video-title">${lesson.title}</h3>
+                        <p class="video-description">${lesson.description}</p>
+                    `;
+                    lessonsCarousel.appendChild(videoElement);
+                });
+            }
+
+            function showNotification() {
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 3000);
+            }
+
+            function showShareModal() {
+                shareUrlInput.value = window.location.href;
+                shareModal.style.display = 'flex';
+                body.classList.add('no-scroll');
+            }
+
+            function closeShareModal() {
+                shareModal.style.display = 'none';
+                body.classList.remove('no-scroll');
+            }
+
+            function performGlobalSearch(query) {
+                const results = [];
+                const lowerCaseQuery = query.toLowerCase();
+
+                linksData.forEach(item => {
+                    if (item.title.toLowerCase().includes(lowerCaseQuery) || item.url.toLowerCase().includes(lowerCaseQuery)) {
+                        results.push({ ...item, source: 'Links' });
+                    }
+                });
+
+                etsyProducts.forEach(item => {
+                    if (item.name.toLowerCase().includes(lowerCaseQuery)) {
+                        results.push({ ...item, source: 'Etsy' });
+                    }
+                });
+
+                lessonsData.forEach(item => {
+                    if (item.title.toLowerCase().includes(lowerCaseQuery) || item.description.toLowerCase().includes(lowerCaseQuery)) {
+                        results.push({ ...item, source: 'Lessons' });
+                    }
+                });
+
+                displayGlobalResults(results);
+            }
+
+            function displayGlobalResults(results) {
+                globalResultsBox.innerHTML = '';
+                if (results.length > 0) {
+                    results.forEach(item => {
+                        let resultElement;
+                        if (item.type === 'link') {
+                            resultElement = document.createElement('div');
+                            resultElement.className = 'link-item';
+                            resultElement.innerHTML = `
+                                <div class="link-content">
+                                    <div class="link-text">
+                                        <span class="link-icon"><i class="${item.icon}"></i></span>
+                                        <span>${item.title}</span>
+                                    </div>
+                                    <button class="copy-btn" data-url="${item.url}">
+                                        <i class="fas fa-copy"></i>
+                                        نسخ
+                                    </button>
+                                </div>
+                            `;
+                            resultElement.addEventListener('click', (e) => {
+                                if (e.target.tagName.toLowerCase() !== 'button' && !e.target.closest('button')) {
+                                     window.open(item.url, '_blank')
+                                }
+                            });
+                        } else if (item.type === 'product') {
+                            resultElement = document.createElement('a');
+                            resultElement.className = 'etsy-product';
+                            resultElement.href = item.url;
+                            resultElement.target = '_blank';
+                            resultElement.rel = 'noopener noreferrer';
+                            resultElement.innerHTML = `
+                                <img src="${item.image}" alt="${item.name}" class="etsy-product-image">
+                                <div class="etsy-product-details">
+                                    <h4 class="etsy-product-name">${item.name}</h4>
+                                    <p class="etsy-product-price">${item.price}</p>
+                                    <span class="etsy-product-link">اذهب للمنتج</span>
+                                </div>
+                            `;
+                        } else if (item.type === 'video') {
+                            resultElement = document.createElement('div');
+                            resultElement.className = 'video-item';
+                            resultElement.innerHTML = `
+                                <div class="video-container">
+                                    <iframe class="video-iframe" src="${item.videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h3 class="video-title">${item.title}</h3>
+                                <p class="video-description">${item.description}</p>
+                            `;
+                        }
+
+                        if(resultElement) {
+                           globalResultsBox.appendChild(resultElement);
+                        }
+                    });
+                    globalResultsBox.classList.add('show');
+                } else {
+                    const noResultsMessage = document.createElement('p');
+                    noResultsMessage.className = 'no-results-message';
+                    noResultsMessage.textContent = 'لم يتم العثور على نتائج تطابق بحثك.';
+                    globalResultsBox.appendChild(noResultsMessage);
+                    globalResultsBox.classList.add('show');
+                }
+                addCopyButtonListeners();
+            }
+
+            const fadeInSections = document.querySelectorAll('.fade-in-section');
+            const options = {
+                rootMargin: '0px 0px -100px 0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.is-intersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            fadeInSections.forEach(section => {
+                observer.observe(section);
+            });
+
+            const firstSection = document.querySelector('.header');
+            firstSection.classList.add('is-visible');
+
+
+            renderLinks(linksData);
+            renderEtsyProducts(etsyProducts);
+            renderLessons();
+
+            searchInput.addEventListener('input', (event) => {
+                const query = event.target.value.toLowerCase();
+                const filtered = linksData.filter(link => link.title.toLowerCase().includes(query));
+                renderLinks(filtered);
+            });
+
+            etsySearchInput.addEventListener('input', (event) => {
+                const query = event.target.value.toLowerCase();
+                const filtered = etsyProducts.filter(product => product.name.toLowerCase().includes(query));
+                renderEtsyProducts(filtered);
+            });
+
+            globalSearchBtn.addEventListener('click', () => {
+                const query = globalSearchInput.value;
+                if (query.trim() !== '') {
+                    performGlobalSearch(query);
+                } else {
+                    globalResultsBox.classList.remove('show');
+                    globalResultsBox.innerHTML = '';
+                }
+            });
+
+            globalSearchInput.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    const query = globalSearchInput.value;
+                    if (query.trim() !== '') {
+                        performGlobalSearch(query);
+                    } else {
+                        globalResultsBox.classList.remove('show');
+                        globalResultsBox.innerHTML = '';
+                    }
+                }
+            });
+
+            globalSearchInput.addEventListener('input', (event) => {
+                const query = event.target.value;
+                if (query.trim() === '') {
+                    globalResultsBox.classList.remove('show');
+                    globalResultsBox.innerHTML = '';
+                }
+            });
+
+            shareButton.addEventListener('click', showShareModal);
+            shareCloseBtn.addEventListener('click', closeShareModal);
+            window.addEventListener('click', (event) => {
+                if (event.target === shareModal) {
+                    closeShareModal();
+                }
+            });
+
+            shareCopyBtn.addEventListener('click', () => {
+                shareUrlInput.select();
+                shareUrlInput.setSelectionRange(0, 99999);
+                navigator.clipboard.writeText(shareUrlInput.value).then(() => {
+                    shareCopyBtn.textContent = 'تم النسخ!';
+                    setTimeout(() => {
+                        shareCopyBtn.textContent = 'نسخ';
+                    }, 2000);
+                });
+            });
+
+            document.querySelectorAll('.share-social-icon').forEach(link => {
+                link.addEventListener('click', (event) => {
+                    const platform = event.currentTarget.dataset.platform;
+                    if (platform === 'copy') {
+                        event.preventDefault();
+                        navigator.clipboard.writeText(window.location.href).then(() => {
+                            closeShareModal();
+                            showNotification();
+                        });
+                        return;
+                    }
+
+                    const pageUrl = encodeURIComponent(window.location.href);
+                    let shareUrl = '';
+
+                    switch (platform) {
+                        case 'facebook':
+                            shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+                            break;
+                        case 'x':
+                            shareUrl = `https://twitter.com/intent/tweet?url=${pageUrl}`;
+                            break;
+                        case 'whatsapp':
+                            shareUrl = `https://wa.me/?text=${pageUrl}`;
+                            break;
+                        case 'telegram':
+                            shareUrl = `https://t.me/share/url?url=${pageUrl}`;
+                            break;
+                        case 'linkedin':
+                            shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}`;
+                            break;
+                        case 'pinterest':
+                            const customTitle = event.currentTarget.dataset.shareTitle || document.title;
+                            const customDescription = event.currentTarget.dataset.shareDescription || '';
+                            const customImage = event.currentTarget.dataset.shareImage || '';
+                            shareUrl = `https://www.pinterest.com/pin/create/button/?url=${pageUrl}&description=${encodeURIComponent(customDescription)}&media=${encodeURIComponent(customImage)}`;
+                            break;
+                        default:
+                            return;
+                    }
+
+                    window.open(shareUrl, '_blank', 'noopener,noreferrer');
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
